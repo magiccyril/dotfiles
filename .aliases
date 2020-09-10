@@ -9,10 +9,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias c="cd ~/Code"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -26,6 +25,7 @@ fi
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
+alias ll="ls -lF ${colorflag}"
 
 # List all files colorized in long format, excluding . and ..
 alias la="ls -lAF ${colorflag}"
@@ -53,7 +53,6 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
